@@ -1,0 +1,153 @@
+body { 
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f7f8fa;
+    color: #222;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* HEADER STYLING */
+header {
+    background: linear-gradient(90deg, #2b5876 0%, #4e4376 100%);
+    color: #fff;
+    padding: 2rem 0;
+    box-shadow: 0 2px 8px rgba(46, 49, 49, 0.08);
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.profile-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(46, 49, 49, 0.2);
+    border: 4px solid #fff;
+}
+
+nav h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin: 0.5rem 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+nav ul li a:hover {
+    color: #ffd700;
+}
+
+/* SECTIONS */
+section {
+    max-width: 900px;
+    margin: 2.5rem auto;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 12px rgba(46, 49, 49, 0.07);
+}
+
+section h2 {
+    font-size: 2rem;
+    color: #2b5876;
+    margin-bottom: 1rem;
+}
+
+section ul {
+    padding-left: 1.5rem;
+    font-size: 1.1rem;
+}
+
+/* PROJECT BLOCK */
+.project {
+    background: #f0f4f8;
+    border-radius: 10px;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 1px 6px rgba(46, 49, 49, 0.05);
+    text-align: center;
+}
+
+.project img {
+    width: 90%;
+    max-width: 600px;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(46, 49, 49, 0.2);
+}
+
+.project h3 {
+    color: #4e4376;
+    margin-top: 1rem;
+    font-size: 1.6rem;
+}
+
+.project p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+/* ICONS */
+.email-icon,
+.linkedin-icon,
+.phone-icon {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 1.5rem 0;
+    background: #2b5876;
+    color: #fff;
+    font-size: 1rem;
+    margin-top: 2rem;
+    border-radius: 0 0 12px 12px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 700px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    .project img {
+        width: 100%;
+        margin: 0 0 1rem 0;
+    }
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid #ffd700;
+    padding-bottom: 2px;
+}
